@@ -1,0 +1,67 @@
+.about-section{
+    overflow: hidden;   
+    height: 100vh;
+    padding-top: 2rem;
+}
+.picture{
+    position: relative;
+    margin-left: 6rem;
+
+    &__photo{
+        width: 60%;
+        border-radius: 2rem;
+        position: absolute;
+
+        &--1{
+            left: 12rem;
+        }
+        &--2{
+            top: 4.5rem;
+            z-index: 1;
+        }
+        &--3{
+            top: 9rem;
+            left: 12rem;
+        }
+        &:hover &_photo:not(:hover){
+            transform: scale(0.7);
+        }
+        &:hover{
+            transform: scale(1.3);
+            box-shadow: 0 1rem 2rem $color-black;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+    }
+
+}
+.services-section{
+    overflow: hidden;
+    height: 110vh;
+    padding-top: 2rem;
+    &__photo{
+        width: 80%;
+        transform: translate(5%);
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+}
+.clients-section{
+    height: 110vh;
+    overflow: hidden;
+    &__logo{
+        width: 50%;
+        margin-bottom: 3rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.contact-section{
+    height: 124vh;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+

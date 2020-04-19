@@ -1,0 +1,24 @@
+.btn-learn-more{
+    color: $color-primary-light;
+    text-decoration: none;
+    font-size: 120%;
+    background-color: $color-primary;
+    padding: .5rem;
+    border-radius: .5rem;
+
+    &__service{
+        margin-left: 5rem;
+        padding: .6rem;
+    }
+
+    &:hover{
+        background-color: $color-primary-light;
+        color: $color-primary;
+        transition: all 0.3s;
+        box-shadow: 0 0 1rem $color-primary, 0 0 4rem $color-primary, 0 0 8rem $color-primary;
+    }
+    &:active{
+        background-color: $color-orange;
+        color: $color-primary-dark;
+    }
+}

@@ -1,0 +1,55 @@
+.header{
+    background-image: url(/resources/img/background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    &__logo{
+        width: 25%;
+        margin-top: 1.8rem;
+        float: left;
+    }
+    &__main-nav{
+        float: right;
+        margin-bottom: 5rem;
+        li{
+            display: inline-block;
+            list-style: none;
+            margin-right: 2rem;
+            margin-top: 3.7rem;
+            font-size: 120%;
+            
+            a{
+                text-decoration: none;
+                color: $color-primary-light;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                &:hover{
+                    color: $color-primary;
+                }
+            }    
+        }
+        
+    }
+    &__pagename{
+        font-size: 450%;
+        color: $color-white;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: -1rem;
+        span{
+            color: $color-primary;
+            font-size: 200%;
+        }
+    }
+    &__slogan{
+        text-align: center;
+        font-size: 200%;
+        color: $color-white;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        span{
+            color: $color-primary;
+        }
+    }
+}

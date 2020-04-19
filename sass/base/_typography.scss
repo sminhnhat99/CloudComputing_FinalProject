@@ -1,0 +1,208 @@
+html{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+}
+.about-section{
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 250%;
+        margin-bottom: 3rem;
+        color: $color-primary-light;
+        cursor: pointer;
+        &:hover{
+            transform: skewX(5deg) scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+    &__paragraph{
+        font-size: 130%;
+        line-height: 2rem;
+        font-style: italic;
+        margin-bottom: 1rem;
+        color: $color-primary-light;
+        span{
+            color: $color-primary;
+        }
+    }
+}
+.services-section{
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 250%;
+        margin-bottom: 1.5rem;
+        color: $color-primary-light;
+        cursor: pointer;
+        &:hover{
+            transform: skewX(5deg) scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+    &__paragraph{
+        text-align: center;
+        color: $color-primary-light;
+        margin-bottom: 2rem;
+        span{
+            color: $color-primary;
+        }
+    }
+    &__main-content{
+        font-size: 160%;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-primary-light;
+    }
+    &__description{
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: $color-primary-light;
+        font-style: italic;
+    }
+
+}
+
+.clients-section{
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 250%;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+        color: $color-primary-dark;
+        cursor: pointer;
+        &:hover{
+            transform: skewX(5deg) scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+    &__paragraph{
+        text-align: center;
+        color: $color-primary-dark;
+        font-size: 120%;
+        margin-bottom: 2rem;
+        span{
+            color: $color-primary;
+        }
+    }
+}
+
+.contact-section{
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 200%;
+        margin-bottom: 1.5rem;
+        color: $color-primary-light;
+        cursor: pointer;
+        &:hover{
+            transform: skewX(5deg) scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+
+    &__HQ{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 100%;
+        margin-bottom: 1.5rem;
+        color: $color-primary-light;
+        border-bottom: 0.1rem solid $color-orange;
+    }
+
+    &__info{
+        li{
+            list-style: none;
+            color: $color-primary-light;
+            margin-bottom: 1.2rem;
+            line-height: 1.5rem;
+            span{
+                font-weight: 700;
+            }
+            .contact_icon{
+                margin-right: .4rem;
+                color: $color-orange;
+                &:hover{
+                    transform: scale(1.5);
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+
+    &__support{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 100%;
+        margin-bottom: 1.5rem;
+        color: $color-primary-light;
+        border-bottom: 0.1rem solid $color-orange;
+    }
+
+    &__onlinesupport{
+        margin-bottom: 1.5rem;
+        li{
+            display: inline-block;
+            margin-right: 1.2rem;
+            margin-top: .8rem;
+        }
+        .contact__btn{
+            color: $color-primary-light;
+            text-decoration: none;
+            font-size: 120%;
+            background-color: $color-primary;
+            padding: .5rem;
+            border-radius: .5rem;
+
+            .support_icon{
+                margin-right: .4rem;
+            }
+
+            &:hover{
+                background-color: $color-primary-light;
+                color: $color-primary-dark;
+                transition: all 0.3s;
+                box-shadow: 0 0 1rem $color-primary, 0 0 1.5rem $color-primary, 0 0 2rem $color-primary;
+            }
+            &:active{
+                background-color: $color-orange;
+                color: $color-primary-dark;
+            }
+        }
+    }
+
+    &__connect{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 100%;
+        margin-bottom: 2rem;
+        color: $color-primary-light;
+        border-bottom: 0.1rem solid $color-orange;
+    }
+
+    &__socialnetwork{
+        
+        li{
+            display: inline-block;
+            font-size: 280%;
+        }
+        .socialnetwork__btn{
+            margin-right: 1.5rem;
+            .social_icon{
+                color: $color-white;
+
+                &:hover{
+                    color: $color-orange;
+                    transform: scale(1.5);
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+}
