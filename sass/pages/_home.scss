@@ -1,3 +1,5 @@
+
+// ------------------------------------------INDEX------------------------------------------------
 .about-section{
     background-image: linear-gradient(to left, rgba($color-background-light,1.2rem),rgba($color-background-dark,2rem));
 }
@@ -8,5 +10,22 @@
     background-color: $color-primary-light;
 }
 .contact-section{
+    background-image: linear-gradient(to left, rgba($color-background-light,1.2rem),rgba($color-background-dark,2rem));
+}
+// ----------------------------------- ABOUT ----------------------------------------------------
+.intro{
+    background-image: linear-gradient(to left, rgba($color-background-light,1.2rem),rgba($color-background-dark,2rem));
+}
+.functions{
+    background-image: linear-gradient(to left, rgba($color-background-light,1.2rem),rgba($color-background-dark,2rem));
+}
+
+// ----------------------------------- SERVICES -------------------------------------------------
+.services{
+    background-image: linear-gradient(to left, rgba($color-background-light,1.2rem),rgba($color-background-dark,2rem));
+}
+
+//---------------------------------- CONTACTS ---------------------------------------------------
+.contacts{
     background-image: linear-gradient(to left, rgba($color-background-light,1.2rem),rgba($color-background-dark,2rem));
 }

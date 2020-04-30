@@ -1,3 +1,25 @@
+/* Thiết kế nền chung cho các phần trong trang web */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  text-rendering: optimizeLegibility; }
+
+body {
+  overflow-x: hidden; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+
+/* Các cụm header của 3 trang */
+
+/* Trang chủ */
+
 .header {
   background-image: url(/resources/img/background.jpg);
   height: 100vh;
@@ -41,25 +63,26 @@
     .header__slogan span {
       color: #3c99dc; }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+/* Trang giới thiệu */
 
-html {
-  text-rendering: optimizeLegibility; }
+.AboutUs-header {
+  background-image: url(/resources/img/background.jpg);
+  height: 26vh; }
 
-body {
-  overflow-x: hidden; }
+/* Trang dịch vụ  */
 
-.row {
-  max-width: 1140px;
-  margin: 0 auto; }
+.services-header {
+  background-image: url(/resources/img/background.jpg);
+  height: 26vh; }
 
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both; }
+  /* Hàm clearfix */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both; }
+  
+/* Hiệu ứng cho button tìm hiểu thêm và "gửi" trong form */
 
 .btn-learn-more {
   color: #d5f3fe;
@@ -80,6 +103,7 @@ body {
     background-color: #f04217;
     color: #2565ae; }
 
+  /* Thiết kế màu sắc và độ lớn font chữ cho toàn bộ trang web  */
 html {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 20px;
@@ -246,6 +270,150 @@ html {
       transform: scale(1.5);
       transition: all 0.3s; }
 
+.intro__title {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 300%;
+  margin-bottom: 0.5rem;
+  color: #d5f3fe;
+  cursor: pointer;
+  display: flex; }
+  .intro__title:hover {
+    transform: skewX(1deg) scale(1.05);
+    transition: all 0.3s; }
+  .intro__title:before, .intro__title:after {
+    content: '';
+    border-top: 0.1rem solid;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    flex: 1 0 1rem; }
+  .intro__title:after {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem; }
+
+.intro__paragraph {
+  color: #d5f3fe;
+  font-size: 120%;
+  line-height: 1.8rem; }
+  .intro__paragraph span {
+    font-weight: 700;
+    color: #2565ae; }
+
+.functions__main-content {
+  display: block;
+  text-align: center;
+  font-size: 120%;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  cursor: default; }
+
+.functions .row {
+  border-bottom: 0.1rem solid #d5f3fe; }
+
+.functions__description {
+  color: #d5f3fe;
+  line-height: 1.8rem; }
+
+.functions i {
+  font-size: 400%;
+  display: flex;
+  margin-left: 4.3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  color: #f04217; }
+
+.services__title {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 300%;
+  margin-bottom: 1rem;
+  color: #d5f3fe;
+  cursor: pointer;
+  display: flex; }
+  .services__title:hover {
+    transform: skewX(1deg) scale(1.05);
+    transition: all 0.3s; }
+  .services__title:before, .services__title:after {
+    content: '';
+    border-top: 0.1rem solid;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    flex: 1 0 1rem; }
+  .services__title:after {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem; }
+
+.services__main-content {
+  display: block;
+  text-transform: uppercase;
+  font-size: 130%;
+  font-weight: 700;
+  margin-bottom: 0.5rem; }
+
+.services__description--IaaS {
+  color: #d5f3fe;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 0.1rem solid #d5f3fe;
+  line-height: 1.5rem; }
+
+.services__description--PaaS {
+  color: #d5f3fe;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 0.1rem solid #d5f3fe;
+  line-height: 1.5rem; }
+
+.services__description--SaaS {
+  color: #d5f3fe;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 0.1rem solid #d5f3fe;
+  line-height: 1.5rem; }
+  .services__description--SaaS .SDocument {
+    color: #3c99dc;
+    font-weight: 700; }
+  .services__description--SaaS .SSheet {
+    color: #06ac38;
+    font-weight: 700; }
+  .services__description--SaaS .SSlides {
+    color: #f8a306;
+    font-weight: 700; }
+  .services__description--SaaS .SNotes {
+    color: #b33ff7;
+    font-weight: 700; }
+  .services__description--SaaS .SMail {
+    color: #66d3fa;
+    font-weight: 700; }
+
+.contacts__title {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 300%;
+  margin-bottom: 3rem;
+  color: #d5f3fe;
+  cursor: pointer;
+  display: flex; }
+  .contacts__title:hover {
+    transform: skewX(1deg) scale(1.05);
+    transition: all 0.3s; }
+  .contacts__title:before, .contacts__title:after {
+    content: '';
+    border-top: 0.1rem solid;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    flex: 1 0 1rem; }
+  .contacts__title:after {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem; }
+
 .about-section {
   overflow: hidden;
   height: 100vh;
@@ -300,6 +468,29 @@ html {
   overflow: hidden;
   padding-top: 2rem; }
 
+.intro {
+  height: 100vh;
+  padding-top: 4rem; }
+  .intro__image {
+    width: 100%; }
+
+.functions {
+  height: 80vh;
+  padding-top: 1rem; }
+
+.services {
+  height: 160vh;
+  padding-top: 4rem; }
+  .services__images img {
+    width: 100%;
+    height: 29vh;
+    margin-top: 1rem;
+    margin-bottom: 3rem; }
+
+.contacts {
+  height: 160vh;
+  padding-top: 4rem; }
+
 .about-section {
   background-image: linear-gradient(to left, #424d7b, #1e1c28); }
 
@@ -310,6 +501,18 @@ html {
   background-color: #d5f3fe; }
 
 .contact-section {
+  background-image: linear-gradient(to left, #424d7b, #1e1c28); }
+
+.intro {
+  background-image: linear-gradient(to left, #424d7b, #1e1c28); }
+
+.functions {
+  background-image: linear-gradient(to left, #424d7b, #1e1c28); }
+
+.services {
+  background-image: linear-gradient(to left, #424d7b, #1e1c28); }
+
+.contacts {
   background-image: linear-gradient(to left, #424d7b, #1e1c28); }
 
 @keyframes moveInLeft {
@@ -437,3 +640,77 @@ footer {
   background-color: #1e1c28;
   color: #d5f3fe;
   padding: 20px; }
+
+/* Big tablet to 1200px */
+@media only screen and (max-width: 1200px) {
+  .header__pagename {
+    margin-top: 2rem; }
+  .picture {
+    position: relative;
+    margin-left: 4rem; }
+    .picture__photo {
+      width: 50%;
+      border-radius: 2rem;
+      position: absolute; }
+      .picture__photo--1 {
+        left: 9rem; }
+      .picture__photo--2 {
+        top: 4.5rem;
+        z-index: 1; }
+      .picture__photo--3 {
+        top: 8rem;
+        left: 9rem; }
+  .submit-form {
+    width: 87%; }
+    .submit-form__content {
+      font-size: 90%; }
+    .submit-form__description {
+      font-size: 85%; }
+    .submit-form input[type=text], .submit-form input[type=email] {
+      padding-right: 13rem; }
+    .submit-form textarea {
+      padding-right: 13rem; }
+  .contact-section__onlinesupport .contact__btn {
+    font-size: 100%; } }
+
+/* Small tablet to big tablet from 768px to 1024px */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px; }
+  .header__pagename {
+    margin-top: 6rem; }
+  .picture__photo--3 {
+    top: 7.5rem; }
+  .submit-form input[type=text], .submit-form input[type=email] {
+    padding-right: 10rem; }
+  .submit-form textarea {
+    padding-right: 10rem; }
+  .submit-form input[type=submit] {
+    margin-left: 10rem; } }
+
+/* Small phones to small tablets from 767px to 481px */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 12px; }
+  .header {
+    height: 60vh; }
+    .header__pagename {
+      margin-top: 3rem; }
+  .about-section {
+    height: 60vh; }
+  .services-section {
+    height: 70vh; }
+  .btn-learn-more {
+    font-size: 100%; }
+    .btn-learn-more__service {
+      margin-left: 2.5rem; }
+  .slideshow__navigation {
+    bottom: -900px; }
+  .clients-section {
+    height: 60vh; }
+  .submit-form input[type=text], .submit-form input[type=email] {
+    padding-right: 2.5rem; }
+  .submit-form textarea {
+    padding-right: 2rem; }
+  .submit-form input[type=submit] {
+    margin-left: 7rem; } }

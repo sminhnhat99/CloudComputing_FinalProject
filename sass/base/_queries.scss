@@ -1,0 +1,131 @@
+/* Big tablet to 1200px */
+
+@media only screen and (max-width: 1200px){
+    .header{
+        &__pagename{
+            margin-top: 2rem;
+        }
+    }
+    .picture{
+        position: relative;
+        margin-left: 4rem;
+    
+        &__photo{
+            width: 50%;
+            border-radius: 2rem;
+            position: absolute;
+    
+            &--1{
+                left: 9rem;
+            }
+            &--2{
+                top: 4.5rem;
+                z-index: 1;
+            }
+            &--3{
+                top: 8rem;
+                left: 9rem;
+            }
+        }
+    
+    }
+    .submit-form{
+        width: 87%;
+        &__content{
+            font-size: 90%;
+        }
+        &__description{
+            font-size: 85%;
+        }
+        input[type=text],input[type=email]{
+            padding-right: 13rem;
+        }
+        textarea{
+            padding-right: 13rem;
+        }
+    }
+    .contact-section{
+        &__onlinesupport{
+            .contact__btn{
+                font-size: 100%;
+            }
+        }
+    }
+}
+/* Small tablet to big tablet from 768px to 1024px */
+
+@media only screen and (max-width: 1024px){
+   html{
+       font-size: 16px;
+   }
+   .header{
+       &__pagename{
+           margin-top: 6rem;
+       }
+   }
+   .picture{
+       &__photo{
+           &--3{
+               top: 7.5rem;
+           }
+       }
+   }
+   .submit-form{
+        input[type=text],input[type=email]{
+        padding-right: 10rem;
+        }
+        textarea{
+        padding-right: 10rem;
+        }
+        input[type=submit]{
+            margin-left: 10rem;
+        }
+   }
+}
+
+/* Small phones to small tablets from 767px to 481px */
+
+@media only screen and (max-width: 767px)
+{
+   html{
+       font-size: 12px;
+   }
+
+   .header{
+       height: 60vh;
+       &__pagename{
+           margin-top: 3rem;
+       }
+   }
+   .about-section{
+       height: 60vh;
+   }
+   .services-section{
+       height: 70vh;
+   }
+   .btn-learn-more{
+       font-size: 100%;
+       &__service{
+           margin-left: 2.5rem;
+       }
+   }
+   .slideshow{
+       &__navigation{
+           bottom: -900px;
+       }
+   }
+   .clients-section{
+       height: 60vh;
+   }
+   .submit-form{
+    input[type=text],input[type=email]{
+    padding-right: 2.5rem;
+    }
+    textarea{
+    padding-right: 2rem;
+    }
+    input[type=submit]{
+        margin-left: 7rem;
+    }
+}
+}

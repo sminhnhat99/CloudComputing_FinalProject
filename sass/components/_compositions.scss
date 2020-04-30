@@ -1,3 +1,4 @@
+// ---------------------------------------- INDEX ------------------------------------------
 .about-section{
     overflow: hidden;   
     height: 100vh;
@@ -65,3 +66,37 @@
 }
 
 
+// ---------------------------------------- ABOUT ------------------------------------
+.intro{
+    height: 100vh;
+    padding-top: 4rem;
+    &__image{
+        width: 100%;
+    }
+}
+.functions{
+    height: 80vh;
+    padding-top: 1rem;
+}
+
+// ---------------------------------------- SERVICES ------------------------------------
+.services{
+
+    height: 160vh;
+    padding-top: 4rem;
+    &__images{
+        img{
+        width: 100%;
+        height: 29vh;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        }
+    }
+}
+
+// ---------------------------------------- CONTACT ------------------------------------
+
+.contacts{
+    height: 160vh;
+    padding-top: 4rem;
+}

@@ -206,3 +206,185 @@ html{
         }
     }
 }
+
+// ------------------------------------- ABOUT ----------------------------------------
+
+.intro{
+    &__title{
+        margin-top: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 300%;
+        margin-bottom: 0.5rem;
+        color: $color-primary-light;
+        cursor: pointer;
+        display: flex;
+        &:hover{
+            transform: skewX(1deg) scale(1.05);
+            transition: all 0.3s;
+        }
+        &:before,
+        &:after {
+            content: '';
+            border-top: 0.1rem solid;
+            margin-top: 1.5rem;
+            margin-right: 0.5rem;
+            flex: 1 0 1rem;
+        }
+        &:after {
+            margin-top: 1.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+    &__paragraph{
+        color: $color-primary-light;
+        font-size: 120%;
+        line-height: 1.8rem;
+        span{
+            font-weight: 700;
+            color: $color-primary-dark;
+        }
+    }
+}
+.functions{
+    &__main-content{
+        display: block;
+        text-align: center;
+        font-size: 120%;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        cursor: default;
+    }
+    .row{
+        border-bottom: 0.1rem solid $color-primary-light;
+    }
+    &__description{
+        color: $color-primary-light;
+        line-height: 1.8rem;
+    }
+    i{
+        font-size: 400%;
+        display: flex;
+        margin-left: 4.3rem;
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+        color: $color-orange;
+        
+    }
+}
+
+// ------------------------------------- SERVICES ----------------------------------------
+.services{
+    &__title{
+        margin-top: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 300%;
+        margin-bottom: 1rem;
+        color: $color-primary-light;
+        cursor: pointer;
+        display: flex;
+        &:hover{
+            transform: skewX(1deg) scale(1.05);
+            transition: all 0.3s;
+        }
+        &:before,
+        &:after {
+            content: '';
+            border-top: 0.1rem solid;
+            margin-top: 1.5rem;
+            margin-right: 0.5rem;
+            flex: 1 0 1rem;
+        }
+        &:after {
+            margin-top: 1.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__main-content{
+        display: block;
+        text-transform: uppercase;
+        font-size: 130%;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    &__description{
+        &--IaaS{
+            color: $color-primary-light;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            border: 0.1rem solid $color-primary-light;
+            line-height: 1.5rem ;
+        }
+        &--PaaS{
+            color: $color-primary-light;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            border: 0.1rem solid $color-primary-light;
+            line-height: 1.5rem ;
+        }
+        &--SaaS{
+            color: $color-primary-light;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            border: 0.1rem solid $color-primary-light;
+            line-height: 1.5rem ;
+            .SDocument{
+                color: $color-primary;
+                font-weight: 700;
+            }
+            .SSheet{
+                color: $color-green;
+                font-weight: 700;
+            }
+            .SSlides{
+                color: $color-orange-light;
+                font-weight: 700;
+            }
+            .SNotes{
+                color: $color-violet;
+                font-weight: 700;
+            }
+            .SMail{
+                color: $color-primary-medium;
+                font-weight: 700;
+            }
+        }
+    }
+
+}
+
+// ----------------------------------- CONTACT ---------------------------------------
+.contacts{
+    &__title{
+        margin-top: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 300%;
+        margin-bottom: 3rem;
+        color: $color-primary-light;
+        cursor: pointer;
+        display: flex;
+        &:hover{
+            transform: skewX(1deg) scale(1.05);
+            transition: all 0.3s;
+        }
+        &:before,
+        &:after {
+            content: '';
+            border-top: 0.1rem solid;
+            margin-top: 1.5rem;
+            margin-right: 0.5rem;
+            flex: 1 0 1rem;
+        }
+        &:after {
+            margin-top: 1.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+}
